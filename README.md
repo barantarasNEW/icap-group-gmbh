@@ -10,6 +10,7 @@
 + React-icons
 + TypeScript
 + JavaScript
++ Context
 + classnames
 + Fetch, API
 + Sass (SCSS)

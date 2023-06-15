@@ -4,10 +4,11 @@
 .additional-bar {
   &__list {
     @include navList;
-  }
+    flex-direction: column;
 
-  &__icon {
-    transition: all 0.8s;
+    @include onDesktop {
+      flex-direction: row;
+    }
   }
 
   &__btn {

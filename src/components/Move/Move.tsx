@@ -11,7 +11,7 @@ const Move = () => {
 
       <button className='move__btn' onClick={onClick}>
         <img
-          className="move__icon"
+          className="icon move__icon"
           src={`${process.env.PUBLIC_URL}/assets/icons/arrow.svg`}
           alt="icon"
         />

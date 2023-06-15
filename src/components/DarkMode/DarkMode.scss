@@ -1,0 +1,15 @@
+@import '../../styles/utils/mixins';
+
+.dark-mode {
+  display: flex;
+
+  &__icon {
+    width: 50px;
+    height: 40px;
+
+    @include onDesktop {
+      width: 30px;
+      height: 25px;
+    }
+  }
+}

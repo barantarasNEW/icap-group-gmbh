@@ -1,6 +1,24 @@
 @import './reset';
 @import './fonts';
 
+@import './utils/vars';
+
+body {
+  background-color: #fff;
+  color: #000;
+  --icon-color: grayscale(100%);
+  --menu-bg: #e2e6e9;
+  --box-shadow-hover: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+  &.dark {
+    background-color: #222222;
+    color: #fff;
+    --icon-color: invert(100%);
+    --menu-bg: #222222;
+    --box-shadow-hover: 0px 5px 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
 #root {
   min-height: 100%;
   display: flex;
@@ -14,3 +32,4 @@
 @import './blocks/container';
 @import './blocks/page';
 @import './blocks/btn';
+@import './blocks/icon';

@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Loader from "../Loader/Loader";
 import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 import Menu from "../Menu/Menu";
+import { MenuContext } from "../../contexts/MenuContext";
 
 const Layout = () => {
   const { pathname } = useLocation();
@@ -29,18 +30,22 @@ const Layout = () => {
 
   return (
     <>
-      <Header isMenu={isMenu} onClick={onClick} />
-
-      <Menu isMenu={isMenu} />
-
-      <main className="main">
-        <ErrorBoundary>
-          <Suspense fallback={<Loader />}>
-            <Outlet />
-          </Suspense>
-        </ErrorBoundary>
-      </main>
-
+      <MenuContext.Provider value={{
+        isMenu,
+        toggleMenu: onClick }}
+      >
+        <Header />
+  
+        <Menu />
+      </MenuContext.Provider>
+  
+        <main className="main">
+          <ErrorBoundary>
+            <Suspense fallback={<Loader />}>
+              <Outlet />
+            </Suspense>
+          </ErrorBoundary>
+        </main>
       <Footer />
     </>
   );

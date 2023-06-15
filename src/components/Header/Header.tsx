@@ -1,17 +1,16 @@
+import { useContext } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { RxCross1 } from 'react-icons/rx';
 import AdditionalBar from "../AdditionalBar/AdditionalBar";
 import BreadCrumbs from "../BreadCrumbs/BreadCrumbs";
 import Logo from "../Logo/Logo";
 import Navbar from "../Navbar/Navbar";
+import { MenuContext } from '../../contexts/MenuContext';
 import './Header.scss';
 
-type Props = {
-  isMenu: boolean;
-  onClick: () => void;
-}
+const Header = () => {
+  const { isMenu, toggleMenu } = useContext(MenuContext);
 
-const Header: React.FC<Props> = ({ isMenu, onClick }) => {
   return (
     <header className="header">
       <div className="header__wrapper">
@@ -26,7 +25,7 @@ const Header: React.FC<Props> = ({ isMenu, onClick }) => {
         <div className="header__menu">
           <Logo />
   
-          <button className="additional-bar__btn" onClick={onClick}>
+          <button className="header__menu-btn" onClick={toggleMenu}>
             {!isMenu
               ? <AiOutlineMenu size={27} />
               : <RxCross1 size={27} />}

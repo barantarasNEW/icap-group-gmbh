@@ -13,7 +13,7 @@ const Nets = () => {
             target="_blank"
           >
             <img
-              className="nets__icon"
+              className="icon nets__icon"
               src={icon}
               alt="icon"
             />

@@ -1,12 +1,12 @@
+import { useContext } from "react";
 import AdditionalBar from "../AdditionalBar/AdditionalBar";
 import Navbar from "../Navbar/Navbar";
+import { MenuContext } from "../../contexts/MenuContext";
 import './Menu.scss';
 
-type Props = {
-  isMenu: boolean;
-}
-
-const Menu: React.FC<Props> = ({ isMenu }) => {
+const Menu = () => {
+  const { isMenu } = useContext(MenuContext);
+  
   return (
     <div
       className="menu"
