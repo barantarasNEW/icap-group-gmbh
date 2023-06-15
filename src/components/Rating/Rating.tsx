@@ -11,7 +11,7 @@ const Rating: React.FC<Props> = ({ rating }) => {
         <li key={i} className="rating__item">
           <img
             className='rating__icon'
-            src={`/assets/icons/${i + 1 <= rating
+            src={`./assets/icons/${i + 1 <= rating
               ? "star-y.svg"
               : "star-b.svg"}`
             }

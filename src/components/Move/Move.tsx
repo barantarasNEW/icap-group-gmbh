@@ -12,7 +12,7 @@ const Move = () => {
       <button className='move__btn' onClick={onClick}>
         <img
           className="move__icon"
-          src="/assets/icons/arrow.svg"
+          src="./assets/icons/arrow.svg"
           alt="icon"
         />
       </button>
