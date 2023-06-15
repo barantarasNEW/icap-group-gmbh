@@ -1,0 +1,16 @@
+@import '../../styles/utils/vars';
+
+.solutions {
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+
+    &--blue {
+      color: $primaryColor
+    }
+  }
+}
