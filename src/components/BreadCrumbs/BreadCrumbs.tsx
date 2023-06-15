@@ -15,7 +15,7 @@ const BreadCrumbs = () => {
         <Link to="/" className="bread-crumbs__link">
           <img
             className="bread-crumbs__icon--home"
-            src="./assets/icons/home.svg"
+            src={`${process.env.PUBLIC_URL}/assets/icons/home.svg`}
             alt="icon"
           />
         </Link>
@@ -26,7 +26,7 @@ const BreadCrumbs = () => {
           <li className="bread-crumbs__item">
             <img
               className="bread-crumbs__icon"
-              src="./assets/icons/arrow-right.svg"
+              src={`${process.env.PUBLIC_URL}/assets/icons/arrow-right.svg`}
               alt="icon"
             />
           </li>

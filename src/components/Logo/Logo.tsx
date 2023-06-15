@@ -6,7 +6,7 @@ const Logo = () => {
     <Link to="/" className="logo">
       <img
         className="logo__icon"
-        src="./assets/icons/logo.svg"
+        src={`${process.env.PUBLIC_URL}/assets/icons/logo.png`} 
         alt="logo"
       />
 
