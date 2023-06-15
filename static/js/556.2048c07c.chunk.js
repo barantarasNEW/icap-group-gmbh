@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkicap_group_gmbh=self.webpackChunkicap_group_gmbh||[]).push([[556],{556:function(n,e,s){s.r(e),s.d(e,{default:function(){return u}});var c=s(689),t=s(184),u=function(){var n=(0,c.s0)();return(0,t.jsx)("section",{className:"not-found",children:(0,t.jsxs)("div",{className:"not-found__wrapper",children:[(0,t.jsx)("h2",{className:"title",children:"Not found"}),(0,t.jsx)("button",{className:"btn",onClick:function(){n("/")},children:"Home"})]})})}}}]);
+//# sourceMappingURL=556.2048c07c.chunk.js.map

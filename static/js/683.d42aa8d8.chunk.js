@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkicap_group_gmbh=self.webpackChunkicap_group_gmbh||[]).push([[683],{683:function(e,s,c){c.r(s),c.d(s,{default:function(){return n}});var a=c(184),n=function(){return(0,a.jsx)("section",{className:"home",children:(0,a.jsx)("div",{className:"container",children:(0,a.jsxs)("div",{className:"home__wrapper",children:[(0,a.jsx)("h1",{className:"home__title",children:"ICAP Group GmbH"}),(0,a.jsx)("p",{className:"home__subtitle",children:"IT System Custom Software Development"})]})})})}}}]);
+//# sourceMappingURL=683.d42aa8d8.chunk.js.map
