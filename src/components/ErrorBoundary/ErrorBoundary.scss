@@ -1,0 +1,7 @@
+@import '../../styles/utils/mixins';
+
+.error-boundary {
+  color: red;
+  text-align: center;
+  @include positionCenter;
+}

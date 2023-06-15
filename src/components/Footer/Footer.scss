@@ -1,0 +1,20 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.footer {
+  padding: 10px 0;
+  border-top: 1px solid $secondaryColor;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @include onTablet {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0px;
+    }
+  }
+}

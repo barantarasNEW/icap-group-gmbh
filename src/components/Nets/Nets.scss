@@ -1,0 +1,11 @@
+@import '../../styles/utils/mixins';
+
+.nets {
+  &__list {
+    @include navList;
+  }
+
+  &__icon {
+    height: 28px;
+  }
+}

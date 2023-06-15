@@ -1,0 +1,16 @@
+@import "../../styles/utils/mixins";
+
+.logo {
+  @include flexCenterGap(10px);
+
+  &__icon {
+    height: 30px;
+  }
+
+  &__text {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+}

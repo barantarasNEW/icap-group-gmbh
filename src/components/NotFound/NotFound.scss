@@ -1,0 +1,12 @@
+@import '../../styles/utils/mixins';
+
+.not-found {
+  @include positionCenter;
+
+  &__wrapper {
+    height: 100%;
+    @include flexCenterGap(10px);
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: $secondaryColor;
+
+  position: fixed;
+  top: $sHeaderHeight;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+
+  transition: transform $primaryTransition;
+
+  @include onDesktop {
+    display: none;
+  }
+}

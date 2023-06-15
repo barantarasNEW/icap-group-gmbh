@@ -1,0 +1,60 @@
+@import '../../styles/utils/vars';
+@import '../../styles/utils/mixins';
+
+.navbar {
+  &__list {
+    @include flexCenterGap(10px);
+    flex-direction: column;
+
+    @include onDesktop {
+      @include navList;
+      flex-direction: row;
+    }
+  }
+
+  &__link {
+    padding: 10px 0;
+    font-size: 26px;
+    text-transform: capitalize;
+    position: relative;
+    transition: color $primaryTransition;
+
+    @include onDesktop {
+      padding: 20px 0;
+      font-size: inherit;
+    }
+
+    &::after {
+      content: "";
+      @include square(5px);
+      border-radius: 50px;
+      background-color: transparent;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: background-color $primaryTransition;
+
+      @include onDesktop {
+        bottom: 10px;
+      }
+    }
+
+
+    &:hover {
+      @include onDesktop {
+        color: $primaryColor;
+      }
+    }
+
+    &.active {
+      color: $primaryColor;
+    }
+
+    &.active {
+      &::after {
+        background-color: $primaryColor;
+      }
+    }
+  }
+}
