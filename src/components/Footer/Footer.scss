@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 
     @include onTablet {
       flex-direction: row;

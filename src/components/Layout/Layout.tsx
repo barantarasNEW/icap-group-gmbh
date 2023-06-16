@@ -13,7 +13,7 @@ const Layout = () => {
 
   const onClick = () => setIsMenu(prev => {
     if (prev) {
-      document.body.style.overflow = "scroll";
+      document.body.style.overflowY = "scroll";
 
       return false;
     }
@@ -25,7 +25,7 @@ const Layout = () => {
 
   useEffect(() => {
     setIsMenu(false);
-    document.body.style.overflow = "scroll";
+    document.body.style.overflowY = "scroll";
   }, [pathname]);
 
   return (
