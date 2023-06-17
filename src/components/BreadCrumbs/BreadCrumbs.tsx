@@ -8,10 +8,6 @@ const BreadCrumbs = () => {
   const visibleCrumbs = pathname === "/" || pathname === "/home"
     ? []
     : pathname.split("/").slice(1);
-   
-  if (pathname === "/") {
-   return null;
-  }
   
   return (
     <ul className="bread-crumbs">
