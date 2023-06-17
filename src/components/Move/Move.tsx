@@ -1,10 +1,16 @@
+import { useLocation } from 'react-router';
 import './Move.scss';
 
 const Move = () => {
   const { pathname } = useLocation();
+
   const onClick = () => {
     window.scrollTo({ top: 0 });
   };
+
+  if (pathname === "/") {
+    return null;
+  }
   
   return (
     <div className='move'>
