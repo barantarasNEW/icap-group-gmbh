@@ -1,22 +1,21 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import { MdDarkMode } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
+import { useLocaleStorage } from '../../hooks/useLocaleStorage';
 import './DarkMode.scss';
 
 const DarkMode = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useLocaleStorage<boolean>(false, "darkMode");
 
-  const onClick = () => setIsDark(prev => {
-    if (prev) {
+  const onClick = () => setIsDark((prev: boolean) => !prev);
+
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.add("dark");
+    } else {
       document.body.classList.remove("dark");
-
-      return false;
     }
-
-    document.body.classList.add("dark");
-
-    return true;
-  });
+  }, [isDark]);
 
   return (
     <button className="dark-mode" onClick={onClick}>

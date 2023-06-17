@@ -11,7 +11,7 @@ const Layout = () => {
   const { pathname } = useLocation();
   const [isMenu, setIsMenu] = useState(false);
 
-  const onClick = () => setIsMenu(prev => {
+  const toggleMenu = () => setIsMenu(prev => {
     if (prev) {
       document.body.style.overflowY = "scroll";
 
@@ -32,7 +32,7 @@ const Layout = () => {
     <>
       <MenuContext.Provider value={{
         isMenu,
-        toggleMenu: onClick }}
+        toggleMenu }}
       >
         <Header />
   
