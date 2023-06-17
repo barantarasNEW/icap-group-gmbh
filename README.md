@@ -11,6 +11,7 @@
 + TypeScript
 + JavaScript
 + Context
++ LocaleStorage
 + classnames
 + Fetch, API
 + Sass (SCSS)
